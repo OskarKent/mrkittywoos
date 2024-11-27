@@ -1,0 +1,112 @@
+*::selection {
+	background: aqua;
+	color: orange;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(aqua, purple);
+	background-attachment: fixed;
+	margin: 0px;
+	color: white;
+
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.sectionholder {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+
+.section {
+	display: grid;
+	place-items: center;
+	grid-template-rows: 2fr 2fr;
+	cursor: pointer;
+	box-shadow: 0px 10px 0px aqua;
+	text-align: center;
+	background: linear-gradient(to top, #4040ff, blue);
+	border: 1px solid white;
+	border-radius: 50px;
+	height: 300px;
+	width: 35vw;
+	transition: 1s;
+	color: white;
+	text-decoration: underline;
+}
+
+.section img {
+	width: 70%;
+	height: auto;
+}
+
+.section:hover {
+	transform: translateY(10px);
+	box-shadow: 0px 5px 0px aqua;
+}
+
+.gallery-holder {
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	place-items: center;
+}
+
+.gallery-image {
+	width: 45vw;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3fr 3fr 3fr;
+	place-items: center;
+}
+
+button {
+	margin: 20px;
+	background: blue;
+	color: white;
+	width: 125px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 1px solid white;
+	transition: 0.25s;
+}
+
+button:hover {
+	width: 130px;
+	height: 55px;
+	transform: rotate(10deg);
+}
+
+button:focus {
+	border: 10px double white;
+}
+
+.mrkittywoos {
+	margin: 10px;
+	width: 33vw;
+} 
+
+@media screen and (max-width: 520px) {
+	.mrkittywoos {		
+		width: 43vw;
+	}
+}
+@media screen and (max-width: 400px) {
+	.mrkittywoos {		
+		width: 53vw;
+	}
+}
+@media screen and (max-width: 300px) {
+	.mrkittywoos {		
+		width: 63vw;
+	}
+}
