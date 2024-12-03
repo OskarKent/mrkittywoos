@@ -1,0 +1,66 @@
+img {
+	width: 200px;
+}
+
+#options {
+	background-attachment: fixed;
+	overflow-y: auto;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	background: linear-gradient(to top, gold, aqua);
+	width: 50vw;
+	height: 40vw;
+}
+
+#options div {
+	cursor: pointer;
+	color: blue;
+	border-radius: 50px;
+	margin: 20px;
+	text-align: center;
+	height: auto;
+	border: 1px solid blue;
+	background: white;
+	transition: 0.5s;
+}
+
+#options div:hover {
+	transform: translateY(-10px);
+}
+
+#options img {
+	width: 80%;
+}
+
+#options::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+#options::-webkit-scrollbar-track {
+  background: rgba(0, 255, 255, 0.7);
+}
+
+#options::-webkit-scrollbar-thumb {
+  background-color: gold;
+  outline: 1px solid black;
+}
+
+#options::-webkit-scrollbar-thumb:hover {
+  background-color: #dfbc00;
+}
+
+@media screen and (max-width: 750px) {
+	#options {
+		font-size: 70%;
+		grid-template-columns: 1fr;
+	}
+	#options img {
+		display: none;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+* ::selection {
+	background: white;
+	color: blue;
+}
+
+body {
+	background: linear-gradient(to bottom, aqua, purple);
+	background-attachment: fixed;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px;
+
+	font-family: "Roboto Mono", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover p {
+	text-decoration: underline;
+}
+
+nav {
+	font-size: 150%;
+	backdrop-filter: blur(7px);
+	background: rgba(255, 255, 255, 0.1);
+	width: 100vw;
+	position: sticky;
+	top: 0px;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 3fr 3fr 3fr;
+	margin-bottom: 20px;
+}
+
+nav div {
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
+
+nav .mrkittywoos {
+	width: 100px;
+}
+
+nav .github {
+	place-self: right;
+	width: 50px;
+}
+
+summary {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
