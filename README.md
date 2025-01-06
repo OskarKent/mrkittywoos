@@ -7,14 +7,14 @@ He now has a website.
 
 ## Why he has a website:
 He has a website because:
-- He can easily be a meme.
+- He should obviously have a website.
 - He should have more popularity.
-- I did not know what to code so I made this.
+- Because.
 
 ## There is also a mr kitty woos universe coming soon.
 It will have
-- Games
-- Tools
-- ASCII art
+- Planets
+- Secrets
+- Images of Mr Kitty Woos
 
 The domain name may also change to __mrkittywoos.com__ soon.
