@@ -20,7 +20,7 @@ const send = (event) => {
       console.log("There Was An Error! ", error.text)
     });
   } else {
-    alert('Please enter your message!')
+    alert('Please enter your name and your message!')
   }
 }
 
