@@ -14,4 +14,5 @@ Mr Kitty Woos recently got the mrkittywoos.com domain name, and has now built an
 
 If anyone on the internet wants to know what Mr Kitty Woos looks like, here is an image:
 ![mr kitty woos](media/mrkittywoos.jpg "mr kitty woos")
+
 Horray for Mr Kitty Woos!
