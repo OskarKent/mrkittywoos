@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mr Kitty Woos - Your New Overlord</title>
+	<title>Mr Kitty Woos</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="media/favicon.ico">
-	<meta name="description" content="Mr Kitty Woos Is The Ultimate Overlord. He Is Also A Toy Cat And IS Building A Digital Universe To Rule Over.">
-	<!-- google site thing -->
-	<meta name="google-site-verification" content="AajrxrNINad3MEL4L35KZa8VPkYc6IRm_ZVUqJbbWWM" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<!-- sal is like animation on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/sal.js/dist/sal.css">
+	<meta name="description" content="Kitty woos Studios is a Web Development company ruled by Mr Kitty Woos focusing using technology for fun.">
+	<meta name="keywords" content="Mr Kitty Woos, Kitty Woos Studios, woos, Kitty, Fun">
 </head>
 <body>
-	<img src="media/mrkittywoos.jpg" id="mrkittywoos" alt="Mr Kitty Woos" title="Mr Kitty Woos">
-	<h1>Mr Kitty Woos</h1>
-	<h2>The Official Website</h2>
-	<h3>A Toy Cat And His Tech Empire</h3>
-	<p>Mr Kitty Woos Is A Toy Cat Living In Toronto.<br> He Is The Ultimate Overlord And Is Building A Universe To Rule Over.<br> It Is Not Ready Yet.</p>
-	<a href="about.html"><button>About</button></a>
-	<a href="contact.html"><button>Contact</button></a>
-	<a href="universe.html"><button>View Universe Progress</button></a>
-	<a href="ideas.html"><button>Report Issue Or Idea For Site Or Universe</button></a>
-	<a href="https://mailchi.mp/db996cd828a2/mr-kitty-woos"><button>Get Notified</button></a>
-	<script type="module" src="cursor.js"></script>
+	<div id="cursor"></div>
+	<div id="top">		
+		<img src="media/mrkittywoos.jpg" alt="Mr Kitty Woos" id="mrkittywoos" title="Mr Kitty Woos">
+		<h1>Mr Kitty Woos</h1>
+		<h2>Your New Overlord</h2>
+		<div>			
+			<a href="#projects"><button>Projects</button></a>
+			<a href="about.html"><button>Learn More</button></a>
+		</div>
+		<p>Mr Kitty woos Is A Toy Cat Living In Toronto.<br>He Makes Fun Websites To Rule The Internet.</p>
+		<img src="media/down.svg" alt="scroll down arrow" id="scroll">
+	</div>
+	<div id="projects">
+		<h2>Projects:</h2>
+		<div data-sal="zoom-in" data-sal-duration="2000" class="project">
+			<h2>Kitty Woos Universe:</h2>
+			<p>Kitty Woos Universe Is A Digital Universe Ruled By Mr Kitty Woos. It Is Still In Proggress, <br>But Version 1 Will Be Released Soon!</p>
+			<a href="universe.html"><button>Info</button></a>
+		</div>
+	</div>
+	<div id="contact">
+		<h1>Contact</h1>
+		<div data-sal="slide-up" data-sal-duration="2000" class="flex">			
+			<label for="name">Enter Your Name</label>
+			<input type="text" id="name" placeholder="Enter Name" autocomplete="off">
+			<label for="message">Enter your message</label>
+			<textarea placeholder="Enter Message" id="message"></textarea>
+			<button id="submit">Send</button>
+			<p>While the Kitty Woos Studios team reads every submission,<br> please note that we may not be able to respond directly.</p>
+		</div>
+	</div>
+	<footer id="footer">
+		<p>Copyright © Kitty Woos Studios 2025</p>
+	</footer>
+	<!-- sal scripts: -->
+	<script src="https://unpkg.com/sal.js/dist/sal.js"></script>
+	<script type="text/javascript">
+		sal();
+	</script>
+	<!-- emailjs scripts -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
