@@ -52,6 +52,11 @@ textarea, input {
 	border: 1px solid gold;
 }
 
+div {
+	overflow: scroll;
+	overscroll-behavior: none;
+}
+
 .flex {
 	display: flex;
 	flex-direction: column;
