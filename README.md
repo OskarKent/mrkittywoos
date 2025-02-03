@@ -1,22 +1,17 @@
-![mr kitty woos](media/favicon.ico "mr kitty woos")
+![mr kitty woos](favicon.ico "mr kitty woos")
 # Mr Kitty Woos
 
-## About
-Mr Kitty Woos is a toy cat in Toronto, Canada and is also the provider of my profile pictures.  
-He now has a website.  
+## Mr Kitty Woos now has mrkittywoos.com!
 
-You can visit the website [here](https://oskarkent.github.io/mrkittywoos).
 
-## Why he has a website:
-He has a website because:
-- He should obviously have a website.
-- He should have more popularity.
-- Because.
+Mr Kitty Woos is a toy cat living in Toronto. He makes fun websites to rule the internet and now owns Kitty Woos Studios, his web development company.
 
-## There is also a mr kitty woos universe coming soon.
-It will have
-- Planets
-- Secrets
-- Images of Mr Kitty Woos
+This is the README for his [amazing website](https://mrkittywoos.com/)!
 
-The domain name may also change to __mrkittywoos.com__ soon.
+Mr Kitty Woos recently got the mrkittywoos.com domain name, and has now built an amazing website for Kitty Woos Studios with his new tagline, "Advancing fun".
+
+[The website](https://mrkittywoos.com/) gets lots of updates and a new 3d version may or may not come out soon!
+
+If anyone on the internet wants to know what Mr Kitty Woos looks like, here is an image:
+![mr kitty woos](media/mrkittywoos.jpg "mr kitty woos")
+Horray for Mr Kitty Woos!
