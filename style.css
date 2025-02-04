@@ -53,7 +53,6 @@ textarea, input {
 }
 
 div {
-	overflow: scroll;
 	overscroll-behavior: none;
 }
 
@@ -73,6 +72,7 @@ div {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
+	overflow: scroll;
 }
 
 #mrkittywoos {
@@ -82,7 +82,7 @@ div {
 
 #scroll {
 	position: absolute;
-	animation: point 1s infinite;
+	animation: point 1s infinite forwards;
 }
 
 #projects {
@@ -95,6 +95,7 @@ div {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	overflow: scroll;
 }
 
 .project {
@@ -118,6 +119,7 @@ div {
 	background-attachment: fixed;
 	background-position: center center;
 	color: blue;
+	overflow: scroll;
 }
 
 #footer {
