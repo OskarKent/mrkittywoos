@@ -67,7 +67,7 @@ div {
 	align-items: center;
 	flex-direction: column;
 	width: 100vw;
-	height: 100vh;
+	height: 99vh;
 	background: url('media/hex.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -78,11 +78,6 @@ div {
 #mrkittywoos {
 	width: 30vw;
 	min-width: 250px;
-}
-
-#scroll {
-	position: absolute;
-	animation: point 1s infinite forwards;
 }
 
 #projects {
@@ -127,16 +122,4 @@ div {
 	background: linear-gradient(yellow, blue);
 	background-position: center center;
 	background-size: cover;
-}
-
-@keyframes point {
-	0% {
-		bottom: 0px;
-	}
-	50% {
-		bottom: 10px;
-	}
-	100% {
-		bottom: 0px;
-	}
 }
