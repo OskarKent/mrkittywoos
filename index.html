@@ -1,61 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mr Kitty Woos</title>
+	<title>Mr. Kitty Woos</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+Rounded+1c&family=Turret+Road&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<!-- sal is like animation on scroll -->
 	<link rel="stylesheet" href="https://unpkg.com/sal.js@0.8.5/dist/sal.css">
-	<meta name="description" content="Kitty woos Studios is a Web Development company ruled by Mr Kitty Woos focusing using technology for fun.">
-	<meta name="keywords" content="Mr Kitty Woos, Kitty Woos Studios, woos, Kitty, Fun">
+	<meta name="description" content="Mr. Kitty Woos is a toy cat living in Toronto, Canada. He makes fun websites to rule the internet.">
+	<!-- so that there is no duplicate for https://mrkittywoos.com/ and https://mrkittywoos.com/index.html -->
+	<link rel="canonical" href="https://mrkittywoos.com/">
 </head>
 <body>
-	<div id="top">		
-		<img src="media/mrkittywoos.jpg" alt="Mr Kitty Woos" id="mrkittywoos" title="Mr Kitty Woos">
+	<div id="loading">
+		<p>Loading...</p>
+		<div id="dots">
+			<div id="d1" class="dot"></div>
+			<div id="d2" class="dot"></div>
+			<div id="d3" class="dot"></div>
+		</div>
+	</div>
+	<div id="blur"></div>
+	<div id="navcontainer">
+		<img src="media/menu.svg" alt="menu icon">
+		<nav id="nav">
+			<a href="#blog"><p>Blog</p></a>
+			<a href="about.html"><p>About</p></a>
+			<a href="#universe"><p>Universe</p></a>
+		</nav>
+	</div>
+	<div class="section" id="top">
+		<img src="media/mrkittywoos.jpg" id="mrkittywoos" alt="mrkittywoos" loading="lazy">
 		<h1>Mr Kitty Woos</h1>
 		<h2>Your New Overlord</h2>
-		<div>			
-			<a href="#projects"><button>Projects</button></a>
-			<a href="about.html"><button>Learn More</button></a>
-		</div>
-		<p>Mr Kitty woos Is A Toy Cat Living In Toronto.<br>He Makes Fun Websites To Rule The Internet.</p>
-	</div>
-	<div id="projects">
-		<h2>Projects:</h2>
-		<div data-sal="zoom-in" data-sal-duration="2000" class="project">
-			<h2>Kitty Woos Universe:</h2>
-			<p>Kitty Woos Universe Is A Digital Universe Ruled By Mr Kitty Woos. It Is Still In Proggress, <br>But Version 1 Will Be Released Soon!</p>
-			<a href="universe.html"><button>Info</button></a>
+		<div>
+			<a href="#projects"><button class="button">Projects</button></a>
+			<a href="about.html"><button class="button">Learn More</button></a>
 		</div>
 	</div>
-	<div id="contact">
-		<h1>Contact</h1>
-		<div data-sal="slide-up" data-sal-duration="2000" class="flex">			
-			<label for="name">Enter Your Name</label>
-			<input type="text" id="name" placeholder="Enter Name" autocomplete="off">
-			<label for="message">Enter your message</label>
-			<textarea placeholder="Enter Message" id="message"></textarea>
-			<button id="submit">Send</button>
-			<p>While the Kitty Woos Studios team reads every submission,<br> please note that we may not be able to respond directly.</p>
+	<div class="section" id="projects">
+		<h2>Projects</h2>
+		<div class="project" id="universe" data-sal="fade" data-sal-duration="1500">
+			<h3>Kitty Woos Universe</h3>
+			<p>Kitty Woos Universe Is A Digital Universe Ruled By Mr Kitty Woos. It Is Still In Progress, But Version 1 Will Be Released Soon!</p>
+			<a href="universe.html">
+				<button class="button" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">More info</button>
+			</a>
+		</div>
+		<div class="project" id="blog" data-sal="fade" data-sal-duration="1500">
+			<h3>Kitty Woos Blog</h3>
+			<p>A Place For Mr Kitty Woos To Put Updates On Kitty Woos Universe And Other Projects, Currently Incomplete.</p>
+			<a href="blog.html">				
+				<button class="button" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">More info</button>
+			</a>
 		</div>
 	</div>
-	<footer id="footer">
-		<p>Copyright © Kitty Woos Studios 2025</p>
-	</footer>
-	<!-- sal scripts: -->
+	<div id="contact" class="section" data-sal="slide-up" data-sal-duration="1500">
+		<h2>Contact</h2>
+		<label for="name">Name</label>
+		<input type="text" class="input" id="name" placeholder="Name" autocomplete="off">
+		<label for="message">Message</label>
+		<textarea id="message" class="input" placeholder="Message"></textarea>
+		<label for="email">Email address <span>(optional) <div id="info"><p>So that Kitty Woos Studios can respond</p></div></span></label>
+		<input type="email" class="input" id="email" placeholder="Email address" autocomplete="off">
+		<button id="submit" class="button">Send</button>
+	</div>
+	<p>Copyright © Kitty Woos Studios 2025</p>
+	<div id="bottom">
+		<div id="r1">			
+			<a href="#universe"><p>Universe</p></a>
+			<a href="#blog"><p>Blog</p></a>
+			<a href="#projects"><p>Projects</p></a>
+			<a href="#contact"><p>Contact</p></a>
+		</div>
+		<a href="credits.html"><p>Credits</p></a>
+	</div>
+	<div id="extra">	
+		<a href="mailto:?subject=Mr.%20Kitty%20Woos&body=Check%20out%20https%3A//mrkittywoos.com!" target="_blank">
+			<img src="media/share.svg" alt="share icon" title="share">
+		</a>
+	</div>
+	<script type="text/javascript" src="load.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+	<script type="text/javascript" src="script.js" defer></script>
 	<script src="https://unpkg.com/sal.js@0.8.5/dist/sal.js"></script>
 	<script type="text/javascript">
 		sal();
 	</script>
-	<!-- emailjs scripts -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<!-- Ahrefs script (for domain authentication) -->
-	<script src="https://analytics.ahrefs.com/analytics.js" data-key="sPjxcxjfew9lvakwnZsTqg" async></script>
 </body>
 </html>

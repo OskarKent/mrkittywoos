@@ -1,35 +1,5 @@
-const message = document.getElementById('message');
-const name = document.getElementById('name');
-const submit = document.getElementById('submit');
-let sent = false
-
-emailjs.init({
-  publicKey: 'qy4Hy6xZFsxY7Xirg'
-});
-
-const send = (event) => {
-  if (message.value && name.value && sent === false) {    
-    event.preventDefault();
-    emailjs.send("mrkittywoos","template_vrrfyph",{
-      message: message.value,
-      name: name.value
-    }).then(() => {
-      alert('Email Sent!')
-      name.value = "";
-      submit.textContent = "Email Sent!"
-      message.value = "";
-      sent = true;
-    }).catch((error) => {
-      alert('Error! Email Not Sent.')
-      console.log("There Was An Error! ", error.text)
-    });
-  } else {
-    if (sent === false) {
-      alert('Please enter your name and your message!')
-    } else {
-    	alert("email already sent!")
-    }
-  }
-}
-
-submit.addEventListener('click', send)
+const navcontainer=document.getElementById('navcontainer');const nav=document.getElementById('nav');const blur=document.getElementById('blur');let open=!1;navcontainer.addEventListener('click',()=>{if(open===!1){open=!0;blur.style.display='block';nav.style.display='block';navcontainer.children[0].src='media/close.svg'}else{open=!1;blur.style.display='none';nav.style.display='none';navcontainer.children[0].src='media/menu.svg'}})
+const message=document.getElementById('message');const name=document.getElementById('name');const email=document.getElementById('email');const submit=document.getElementById('submit');emailjs.init({publicKey:'qy4Hy6xZFsxY7Xirg'});const send=(event)=>{if(message.value&&name.value){event.preventDefault();emailjs.send("mrkittywoos","template_vrrfyph",{message:message.value,name:name.value,email:email.value}).then(()=>{alert('Email Sent!')
+name.value="";message.value="";email.value=""}).catch((error)=>{alert('Error! Email Not Sent.')
+console.log("There Was An Error! ",error.text)})}else{alert('Please enter your name and your message!')}}
+submit.addEventListener('click',send)
