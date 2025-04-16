@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,84 +7,59 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+Rounded+1c&family=Turret+Road&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	<!-- sal is like animation on scroll -->
-	<link rel="stylesheet" href="https://unpkg.com/sal.js@0.8.5/dist/sal.css">
-	<meta name="description" content="Mr. Kitty Woos is a toy cat living in Toronto, Canada. He makes fun websites to rule the internet.">
-	<!-- so that there is no duplicate for https://mrkittywoos.com/ and https://mrkittywoos.com/index.html -->
-	<link rel="canonical" href="https://mrkittywoos.com/">
-	<!-- Ahrefs confirmation tag script (ownership confirmation) -->
-	<script src="https://analytics.ahrefs.com/analytics.js" data-key="sPjxcxjfew9lvakwnZsTqg" async></script>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<meta name="description" content="Mr. Kitty Woos is a toy cat living in Toronto. He is trying to rule the universe, but he wants to take over the internet first.">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-	<div id="loading">
-		<p>Loading...</p>
-		<div id="dots">
-			<div id="d1" class="dot"></div>
-			<div id="d2" class="dot"></div>
-			<div id="d3" class="dot"></div>
-		</div>
-	</div>
-	<div id="blur"></div>
-	<div id="navcontainer">
-		<img src="media/menu.svg" alt="menu icon">
-		<nav id="nav">
-			<a href="#blog"><p>Blog</p></a>
-			<a href="about.html"><p>About</p></a>
+	<div id="follow"></div>
+	<nav id="nav">
+		<a href="#top"><img src="favicon.ico" alt="Mr. Kitty Woos head icon"></a>
+		<div id="links">
+			<a href="#about"><p>About</p></a>
 			<a href="#universe"><p>Universe</p></a>
-		</nav>
-	</div>
-	<div class="section" id="top">
-		<img src="media/mrkittywoos.jpg" id="mrkittywoos" alt="mrkittywoos" loading="lazy">
-		<h1>Mr Kitty Woos</h1>
-		<h2>Your New Overlord</h2>
-		<div>
-			<a href="#projects"><button class="button">Projects</button></a>
-			<a href="about.html"><button class="button">Learn More</button></a>
-		</div>
-	</div>
-	<div class="section" id="projects">
-		<h2>Projects</h2>
-		<div class="project" id="universe" data-sal="fade" data-sal-duration="1500">
-			<h3>Kitty Woos Universe</h3>
-			<p>Kitty Woos Universe Is A Digital Universe Ruled By Mr Kitty Woos. It Is Still In Progress, But Version 1 Will Be Released Soon!</p>
-			<a href="universe.html">
-				<button class="button" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">More info</button>
-			</a>
-		</div>
-	</div>
-	<div id="contact" class="section" data-sal="slide-up" data-sal-duration="1500">
-		<h2>Contact</h2>
-		<label for="name">Name</label>
-		<input type="text" class="input" id="name" placeholder="Name" autocomplete="off">
-		<label for="message">Message</label>
-		<textarea id="message" class="input" placeholder="Message"></textarea>
-		<label for="email">Email address <span>(optional) <div id="info"><p>So that Kitty Woos Studios can respond</p></div></span></label>
-		<input type="email" class="input" id="email" placeholder="Email address" autocomplete="off">
-		<button id="submit" class="button">Send</button>
-	</div>
-	<p>Copyright © Kitty Woos Studios™ 2025</p>
-	<div id="bottom">
-		<div id="r1">			
-			<a href="#universe"><p>Universe</p></a>
-			<a href="#blog"><p>Blog</p></a>
-			<a href="#projects"><p>Projects</p></a>
+			<a href="#cli"><p>CLI</p></a>
 			<a href="#contact"><p>Contact</p></a>
 		</div>
-		<a href="credits.html"><p>Credits</p></a>
+	</nav>
+	<div id="top">
+		<header id="col1">
+			<h1>Mr. Kitty Woos</h1>
+			<h2>Your New Overlord</h2>
+		</header>
+		<img src="media/mrkittywoos.jpg" alt="Mr. Kitty Woos" id="mrkittywoos">
 	</div>
-	<div id="extra">	
-		<a href="mailto:?subject=Mr.%20Kitty%20Woos&body=Check%20out%20https%3A//mrkittywoos.com!" target="_blank">
-			<img src="media/share.svg" alt="share icon" title="share">
-		</a>
+	<div id="about">
+		<h3>About Mr. Kitty Woos</h3>
+		<p>Mr. Kitty Woos is a toy cat living in Toronto. He is also trying to become the overlord of the universe, but he wants to rule the internet first. He now makes fun and interactive websites with his web development company, Kitty Woos Studios. Kitty Woos Studios is based in Toronto and has been making things for Mr. Kitty Woos since late 2024.</p>
 	</div>
-	<script type="text/javascript" src="load.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-	<script type="text/javascript" src="script.js" defer></script>
-	<script src="https://unpkg.com/sal.js@0.8.5/dist/sal.js"></script>
-	<script type="text/javascript">
-		sal();
-	</script>
+	<div id="universe">
+		<h3>Kitty Woos Universe</h3>
+		<p>Kitty Woos Universe is a digital universe made by Kitty Woos Studios and Mr. Kitty Woos. It is a very big project, so it may take some time before it gets put online.It is not released yet, but version one should launch sometime this year. Kitty Woos Universe will be an online universe filled with games and interactive solar systems, with each planet as its own game. It will also feature 3d scenes and physics demonstrations.</p>
+	</div>
+	<div id="cli">
+		<h3>Kitty Woos CLI</h3>
+		<p>Kitty Woos CLI is a virtual <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank">Command Line Interface</a> made by Kitty Woos Studios and Mr. Kitty Woos that has custom commands that can control <a href="https://en.wikipedia.org/wiki/API" target="_blank">APIs</a> and control the website. It is not online yet, but it should come out later this year.</p>
+	</div>
+	<div id="contact">
+		<h3>Contact Kitty Woos Studios</h3>
+		<form method="POST" autocomplete="off" id="contactform">			
+			<label for="name">Name</label>
+			<input type="text" id="name" placeholder="Enter your name" name="name" autocomplete="off" required>
+			<label for="message">Message</label>
+			<textarea id="message" placeholder="Enter your message" name="message" required></textarea>
+			<label for="email">Email address</label>
+			<input type="email" id="email" placeholder="Enter your email address" name="email" autocomplete="off">
+			<input type="submit" id="submit" name="submit">
+		</form>
+	</div>
+	<footer id="footer">
+		<a href="#about"><p>About</p></a>
+		<a href="#universe"><p>Universe</p></a>
+		<a href="#cli"><p>CLI</p></a>
+		<a href="#contact"><p>Contact</p></a>
+		<a href="credits/index.html"><p>Credits</p></a>
+	</footer>
+	<script type="module" src="script.js"></script>
 </body>
 </html>

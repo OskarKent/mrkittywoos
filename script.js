@@ -1,5 +1,36 @@
-const navcontainer=document.getElementById('navcontainer');const nav=document.getElementById('nav');const blur=document.getElementById('blur');let open=!1;navcontainer.addEventListener('click',()=>{if(open===!1){open=!0;blur.style.display='block';nav.style.display='block';navcontainer.children[0].src='media/close.svg'}else{open=!1;blur.style.display='none';nav.style.display='none';navcontainer.children[0].src='media/menu.svg'}})
-const message=document.getElementById('message');const name=document.getElementById('name');const email=document.getElementById('email');const submit=document.getElementById('submit');emailjs.init({publicKey:'qy4Hy6xZFsxY7Xirg'});const send=(event)=>{if(message.value&&name.value){event.preventDefault();emailjs.send("mrkittywoos","template_vrrfyph",{message:message.value,name:name.value,email:email.value}).then(()=>{alert('Email Sent!')
-name.value="";message.value="";email.value=""}).catch((error)=>{alert('Error! Email Not Sent.')
-console.log("There Was An Error! ",error.text)})}else{alert('Please enter your name and your message!')}}
-submit.addEventListener('click',send)
+emailjs.init({
+	publicKey: 'qy4Hy6xZFsxY7Xirg'
+})
+
+const contactform = document.getElementById('contactform');
+
+contactform.addEventListener('submit', (event) => {
+	event.preventDefault();
+	emailjs.sendForm('mrkittywoos', 'template_vrrfyph', contactform).then(() => {
+		alert('Message Sent!');
+		contactform.reset();
+	}).catch((error) => {
+		console.log('error!', error)
+		alert('error sending email!')
+	})
+})
+
+
+const follow = document.getElementById('follow');
+if (window.innerWidth > 1000) {	
+
+	let halfOfFollow = follow.clientWidth/2;
+
+	window.addEventListener('mousemove', async (event) => {
+		await follow.animate({
+			left: event.clientX - halfOfFollow + 'px',
+			top: event.clientY - halfOfFollow + 'px'
+		}, 1500)
+		follow.style.left = event.clientX - halfOfFollow + 'px';
+		follow.style.top = event.clientY - halfOfFollow + 'px';
+		halfOfFollow = follow.clientWidth/2
+	})
+} else {
+	follow.style.display = 'none';
+}
+

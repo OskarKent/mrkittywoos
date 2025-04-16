@@ -1,0 +1,26 @@
+body {
+	background: linear-gradient(to left, rgba(255, 0, 255, 0.5), rgba(0, 255, 255, 0.5)), #000000;
+	color: white;
+	font-family: "Quicksand", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px;
+}
+
+a {
+	color: rgb(135, 206, 235);
+}
+
+a:focus {
+	outline: 1px dashed rgb(135, 206, 235);
+}
+
+#back {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
