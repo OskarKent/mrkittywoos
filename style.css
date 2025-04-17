@@ -162,6 +162,10 @@ a:focus {
 	color: rgb(135, 206, 235);
 }
 
+#footer a:focus {
+	outline: none;
+}
+
 #follow {
 	z-index: 0;
 	background: conic-gradient(#ff00ff, #00ffff);
