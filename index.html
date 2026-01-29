@@ -1,70 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-CA">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mr. Kitty Woos</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-	<meta name="description" content="Mr. Kitty Woos is a toy cat living in Toronto. He is trying to rule the universe, but he wants to take over the internet first.">
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<link rel="canonical" href="https://mrkittywoos.com/">
-</head>
-<body>
-	<div id="loading">
-		<p>Loading</p>
-	</div>
-	<div id="follow"></div>
-	<nav id="nav">
-		<a href="#top"><img src="favicon.ico" alt="Mr. Kitty Woos head icon"></a>
-		<div id="links">
-			<a href="#about"><p>About</p></a>
-			<a href="#universe"><p>Universe</p></a>
-			<a href="#cli"><p>CLI</p></a>
-			<a href="#contact"><p>Contact</p></a>
-		</div>
-	</nav>
-	<div id="top">
-		<header id="col1">
-			<h1>Mr. Kitty Woos</h1>
-			<h2>Your New Overlord</h2>
-		</header>
-		<img src="media/mrkittywoos.jpg" alt="Mr. Kitty Woos" id="mrkittywoos">
-	</div>
-	<div id="about">
-		<h3>About Mr. Kitty Woos</h3>
-		<p>Mr. Kitty Woos is a toy cat living in Toronto. He is also trying to become the overlord of the universe, but he wants to rule the internet first. He now makes fun and interactive websites with his web development company, Kitty Woos Studios. Kitty Woos Studios is based in Toronto and has been making things for Mr. Kitty Woos since late 2024.</p>
-	</div>
-	<div id="universe">
-		<h3>Kitty Woos Universe</h3>
-		<p>Kitty Woos Universe is a digital universe made by Kitty Woos Studios and Mr. Kitty Woos. It is a very big project, so it may take some time before it gets put online.It is not released yet, but version one should launch sometime this year. Kitty Woos Universe will be an online universe filled with games and interactive solar systems, with each planet as its own game. It will also feature 3d scenes and physics demonstrations.</p>
-	</div>
-	<div id="cli">
-		<h3>Kitty Woos CLI</h3>
-		<p>Kitty Woos CLI is a virtual <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank">Command Line Interface</a> made by Kitty Woos Studios and Mr. Kitty Woos that has custom commands that can control <a href="https://en.wikipedia.org/wiki/API" target="_blank">APIs</a> and control the website. It is not online yet, but it should come out later this year.</p>
-	</div>
-	<div id="contact">
-		<h3>Contact Kitty Woos Studios</h3>
-		<form method="POST" autocomplete="off" id="contactform">			
-			<label for="name">Name</label>
-			<input type="text" id="name" placeholder="Enter your name" name="name" autocomplete="off" required>
-			<label for="message">Message</label>
-			<textarea id="message" placeholder="Enter your message" name="message" required></textarea>
-			<label for="email">Email address</label>
-			<input type="email" id="email" placeholder="Enter your email address" name="email" autocomplete="off">
-			<input type="submit" id="submit" name="submit">
-		</form>
-	</div>
-	<footer id="footer">
-		<a href="#about"><p>About</p></a>
-		<a href="#universe"><p>Universe</p></a>
-		<a href="#cli"><p>CLI</p></a>
-		<a href="#contact"><p>Contact</p></a>
-		<a href="credits/index.html"><p>Credits</p></a>
-	</footer>
-	<p>Copyright © Kitty Woos Studios™ 2025.</p>
-	<script type="module" src="script.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. Kitty Woos</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
