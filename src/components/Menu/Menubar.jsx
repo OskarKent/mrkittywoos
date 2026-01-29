@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import './Menubar.css'
+import favicon from "../../assets/favicon.ico"
 
 const Menubar = () => {
   return (
 	<nav id='menu'>
 		<Link to='/'>
-			<img src="src/assets/favicon.ico" alt="Home" />
+			<img src={favicon} alt="Home" />
 		</Link>
 		<Link to='/'>
 			<p>Home</p>

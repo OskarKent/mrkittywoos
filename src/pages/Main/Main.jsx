@@ -1,13 +1,14 @@
 import Menubar from "../../components/Menu/Menubar"
 import './Main.css'
 import { Link } from "react-router-dom"
+import mrkittywoos from "../../assets/mrkittywoos.jpg"
 
 const Main = () => {
   return (
 	<div>
 		<Menubar />
 		<div id="top">
-			<img src="src/assets/mrkittywoos.jpg" />
+			<img src={mrkittywoos} alt="Mr. Kitty Woos" />
 			<h1>Mr. Kitty Woos</h1>
 			<h2>Your new overlord</h2>
 			<div id="info">
